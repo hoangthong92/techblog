@@ -1,0 +1,13 @@
+#mở chức năng rewrite
+RewriteEngine ON
+#định nghĩa lại thư mục gốc
+RewriteBase /
+#bắt đầu viết lại đường dẫn
+RewriteRule ^/$ index.php
+RewriteRule ^lien-he$ contact.php
+RewriteRule ^videos$ videos.php
+RewriteRule ^reviews$ reviews.php
+RewriteRule ^gadgets$ gadgets.php
+RewriteRule ^newspaper-(.*)-([0-9]*).html$ single.php?id=$2
+RewriteRule ^review-(.*)-(.*).html$ singlereview.php?id=$2
+RewriteRule ^video-(.*)-(.*).html$ singlevideo.php?id=$2
